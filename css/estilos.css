@@ -1,0 +1,244 @@
+/*
+font-family: 'Anton', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Cinzel', serif;
+*/
+*{
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+font-family: 'Cinzel', serif;
+  text-align: center;
+}
+main{
+  height: 100%;
+
+}
+section{
+  height: 100%;
+  padding: 4em 2em;
+  position: relative;
+  width: 100%;
+}
+header{
+  background-color: rgba(0,0,0,0.5);
+  padding: 1em 2em;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+#logo{
+  background: url(../svg/logo.svg) no-repeat;
+  background-size: contain;
+  float: left;
+  height: 2.125rem;/*34px / 16*/
+  margin-left: 1.85;
+  width: 25%;
+}
+nav{
+  float: right;
+  text-align: right;
+  width: 70%;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+ul li{
+  border-right: 0.03125em solid rgba(255,255,255,1);
+  display:inline-block;
+  padding: 0.5em 1em;
+}
+ul li a{
+  color: rgba(255, 255, 255, 1);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 1s,
+}
+ul li a:hover, ul li a:active{
+  color: rgba(0, 210,100, 1);
+}
+ul li:nth-last-of-type(1){
+  border-right: none;
+}
+video{
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100%;
+}
+#home{
+  background-color: rgba(0, 0, 0, 0.6);
+
+}
+#home #globo{
+  background-size: contain;
+  height: 11rem;
+  left: 50%;
+  position: absolute;
+  top:22%;
+  transform: translateX(-50%);
+  width: 12.5rem;
+}
+#home h2{
+  color: rgba(255, 255, 255, 1);
+  font-size: 2.5rem;
+  margin: 0;
+  position: relative;
+  text-transform: uppercase;
+  top: 55%;
+
+}
+#home h2 span{
+  color: rgba(0, 210, 100, 1);
+}
+#home p{
+  color: rgba(255, 255, 255, 1);
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0 20%;
+  position: relative;
+  top: 57%;
+}
+#home a{
+background:linear-gradient(rgba(0,210,100,1),rgba(0, 130, 60, 1)) ;
+  border-radius: 0.25em;
+  color: rgba(255, 255, 255, 1);
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 65%;
+  transform: translateX(-50%);
+  width: 12rem;
+  left: 50%;
+  padding: 0.85em  0;
+z-index: 2;
+}
+#home #abajo {
+  background: url(../svg/abajo.svg) no-repeat;
+  display: block;
+  height: 3rem;
+  left: 50%;
+  opacity: 0;
+  position:relative;
+  top: 60%;
+  transform: translateX(-50%);
+  transition:all 0.35s ;
+  width: 3rem;
+  z-index: 1;
+
+}
+#home a:hover + #abajo, #home a:active + #abajo {
+  opacity: 0.5,
+  top: 65%;
+}
+article{
+  column-count: 3;
+  column-gap: 6em;
+  padding-top: 0.5em;
+}
+article #imagen1{
+  background-image: url(../img/uno.jpg);
+}
+article #imagen2{
+  background-image: url(../img/dos.jpg);
+}
+article #imagen3{
+  background-image: url(../img/tres.jpg);
+}
+article div{
+  background-size: cover;
+  border-radius: 50%;
+  border: 0.65em solid rgba(0, 210, 100, 1);
+  height: 12rem;
+  margin: 0 auto 1.5em;
+  width: 12rem;
+}
+h3{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+  margin: 0.5em 0;
+  text-transform: uppercase;
+}
+h4{
+  color: rgba(0, 210, 100, 1);
+  font-size: 1.5rem;
+  margin: 0.5em 0;
+  text-transform: uppercase;
+}
+article a {
+  background:linear-gradient(rgba(0,210,100,1),rgba(0, 130, 60, 1)) ;
+    border-radius: 0.25em;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 1.25em auto 2em;
+    padding: 0.75em 0;
+    text-decoration: none;
+    width: 10rem;
+}
+#galeria #fotos img{
+  float: left;
+  height: auto;
+  width: 20%;
+}
+#contacto #formulario,#contacto #mapa{
+  float: left;
+  width: 50%;
+}
+#contacto #formulario{
+  text-align: left;
+
+}
+#contacto #mapa iframe{
+  border: 0;
+  height: 420px;
+  width: 100%;
+}
+#contacto input,#contacto textarea{
+  width: 95%;
+  color: rgba(0, 210, 100, 1);
+  border-radius: 0.25em;
+  border: 0.09375rem solid rgba(204, 204,204, 1);
+  margin: 0.65em;
+  padding: 0.65em,
+}
+#contacto input[type="submit"]{
+  background:linear-gradient(rgba(0,210,100,1),rgba(0, 130, 60, 1)) ;
+  border: 0;
+  color: rgba(255, 255, 255, 1);
+}
+.arriba{
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  background: url(../svg/arriba.svg);
+  right:  1em;
+  bottom: 1em;
+
+}
+footer{
+  background-color:rgba(0,0,0,0.6) ;
+  border-top:0.5em solid rgba(0,210,100,1) ;
+  color: rgba(255, 255, 255, 1);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.4em 1em;
+  text-align: center;
+  width: 100%;
+}
